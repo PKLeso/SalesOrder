@@ -1,0 +1,11 @@
+<form>        
+    <div class="mb-3">
+        <label for="Name">Description</label>
+        <input type="text" class="form-control" name="name" [(ngModel)]="entry.name" />
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success" (click)="AddPhonebookEntry()" *ngIf="entry.id==0">Add</button>    
+        <button  (click)="UpdatePhonebookEntry()" *ngIf="entry.id!=0">Update</button>
+    </div>
+</form>
