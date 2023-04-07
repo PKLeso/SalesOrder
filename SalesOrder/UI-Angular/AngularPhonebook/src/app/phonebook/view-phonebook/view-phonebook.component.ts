@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { PhonebookApiService } from 'src/app/Shared/phonebook-api.service';
+import { PhonebookApiService } from 'src/app/Shared/services/phonebook-api.service';
 
 @Component({
   selector: 'app-view-phonebook',

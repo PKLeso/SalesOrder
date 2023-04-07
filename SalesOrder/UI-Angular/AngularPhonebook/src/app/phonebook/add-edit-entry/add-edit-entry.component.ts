@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Observable, observable } from 'rxjs';
-import { PhonebookApiService } from 'src/app/Shared/phonebook-api.service';
+import { PhonebookApiService } from 'src/app/Shared/services/phonebook-api.service';
 
 @Component({
   selector: 'app-add-edit-entry',
@@ -51,7 +51,6 @@ export class AddEditEntryComponent implements OnInit {
 
 
   AddPhonebookEntry() {
-    console.log('entry to be added: ', this.entry);
     this.apiService.addEntry(this.entry).subscribe(response => {
       this.getAllEntriesAfterAdd();
       var modalCloseBtn = document.getElementById('add-edit-model-close');

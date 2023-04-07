@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { PhonebookApiService } from 'src/app/Shared/phonebook-api.service';
+import { PhonebookApiService } from 'src/app/Shared/services/phonebook-api.service';
 import { SignalrService } from 'src/app/Shared/signalr.service';
 import { AuthService } from '../auth.service';
 

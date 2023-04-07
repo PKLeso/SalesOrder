@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { PhonebookComponent } from './phonebook/phonebook.component';
 import { AddEditEntryComponent } from './phonebook/add-edit-entry/add-edit-entry.component';
 import { ViewPhonebookComponent } from './phonebook/view-phonebook/view-phonebook.component';
-import { PhonebookApiService } from './Shared/phonebook-api.service';
+import { PhonebookApiService } from './Shared/services/phonebook-api.service';
 import { LoginComponent } from './Auth/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { environment } from 'src/environments/environment.dev';
@@ -17,6 +17,7 @@ import { SearchComponent } from './phonebook/search/search.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { SalesOrderComponent } from './sales-order/sales-order.component';
 
 export function getToken() {
   return localStorage.getItem('JwtToken');
@@ -30,6 +31,7 @@ export function getToken() {
     ViewPhonebookComponent,
     LoginComponent,
     SearchComponent,
+    SalesOrderComponent
   ],
   imports: [
     BrowserModule,
